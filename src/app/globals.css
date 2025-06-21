@@ -1,21 +1,209 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.background-container {
+  background-image: url('/images/sweet-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.contact-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  /* matches shadow-2xl */
+  padding: 2.5rem;
+  background-color: #f9bfdf;
+}
+
+.menu-wrappar {
+  margin: 70px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+}
+
+.custom-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.special-sweet {
+  width: fit-content;
+}
+
+.wrapper {
+  justify-items: center;
+}
+
+.offer {
+  margin: 45px 0px;
+}
+
+.spacial-offer {
+  padding: 10px;
+}
+
+.offer-text {
+  padding: 0px 80px;
+}
+
+.about-wrapper {
+  margin: 50px;
+}
+
+.closemodal {
+  color: black;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closemodal {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closemodal:hover {
+  color: black;
+  /* Change to black when hovered */
+}
+
+.card {
+  position: relative;
+}
+
+.login {
+  display: flex;
+  justify-content: end;
+}
+
+.signup-container {
+  width: 50%;
+}
+
+.signup-closemodal {
+  position: absolute;
+  top: 0rem;
+  right: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: black;
+}
+
+.testimonial-section {
+  padding-top: 4rem;
+  /* same as py-16 */
+  padding-bottom: 4rem;
+  background-color: #fef2f2;
+  /* Tailwind's pink-50 */
+  margin-top: 5rem;
+  /* same as mt-20 */
+}
+
+.testimonial-card {
+  width: 90% !important;
+}
+
+.marriage-modal {
+  position: relative;
+  background-color: white;
+  padding: 2rem;
+  /* p-8 */
+  border-radius: 1rem;
+  /* rounded-2xl */
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  /* shadow-xl */
+  max-width: 36rem;
+  /* max-w-xl */
+  width: 100%;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+.custom-input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+.custom-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #db2777;
+}
+
+input[type='checkbox'], input[type='radio'] {
+  background-color: #db2777; 
+  accent-color: #db2777; 
+}
+
+.book-gap{
+  margin-top: 14px;
 }
